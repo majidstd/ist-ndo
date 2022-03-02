@@ -1,5 +1,5 @@
 module "schema_site01_bd" {
-  source   = "../modules/bd"
+  source   = "modules/bd"
   tenant   = "terraform_ndo"
   schema   = "site01"
   template = "site01"
@@ -33,7 +33,7 @@ module "schema_site01_bd" {
 }
 
 module "schema_site01_app" {
-  source   = "../modules/app"
+  source   = "modules/app"
   tenant   = "terraform_ndo"
   schema   = "Site01"
   template = "site01"
@@ -52,7 +52,7 @@ module "schema_site01_epg" {
     module.schema_site01_bd,
     module.schema_site01_app
   ]
-  source   = "../modules/epg"
+  source   = "modules/epg"
   tenant   = "site01"
   schema   = "site01"
   template = "site01"
