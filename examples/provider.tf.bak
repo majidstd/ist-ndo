@@ -5,7 +5,7 @@ terraform {
       # MSO Provider Source
       source = "CiscoDevNet/mso"
       # MSO Provider Version
-      version = ">=0.4.0"
+      #version = ">=0.4.0"
     }
   }
   # Terraform Engine version
