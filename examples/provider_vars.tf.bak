@@ -1,6 +1,5 @@
 variable "mso_domain" {
   description = "Domain for MSO Authentication."
-  default     = "Local"
   sensitive   = true
   type        = string
 }
