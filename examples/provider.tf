@@ -23,5 +23,5 @@ provider "mso" {
   # MSO Password
   password = var.mso_password
   # MSO Login Domain.  Default is Local
-  domain = var.mso_domain
+  #domain = var.mso_domain
 }
