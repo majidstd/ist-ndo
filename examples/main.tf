@@ -1,4 +1,3 @@
-#
 module "schema_common_bd" {
   source   = "../modules/bd"
   tenant   = "common"
