@@ -1,9 +1,9 @@
-#variable "mso_domain" {
-#  description = "Domain for MSO Authentication."
-#  default	= "local"
-#  sensitive   = true
-#  type        = string
-#}
+variable "mso_domain" {
+ description = "Domain for MSO Authentication."
+ default	= "local"
+ sensitive   = false
+ type        = string
+}
 
 variable "mso_password" {
   description = "Password for MSO Authentication."
