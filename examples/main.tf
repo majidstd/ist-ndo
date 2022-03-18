@@ -1,13 +1,13 @@
 module "schema_common_bd" {
   source   = "../modules/bd"
   tenant   = "common"
-  schema   = "Common"
+  schema   = "common"
   template = "common"
   vrf_name = "default"
   bd_list = [
     {
       # Provide a Name for the Bridge Domain
-      bridge_domain = "example2"
+      bridge_domain = "bd01"
       # Intersite BUM is either true or false.
       intersite_bum_traffic = true
       # Layer2 Stretch is either true or false.
@@ -22,7 +22,7 @@ module "schema_common_bd" {
       optimize_wan_bandwidth = false
     },
     {
-      bridge_domain          = "example3"
+      bridge_domain          = "bd02"
       intersite_bum_traffic  = true
       layer2_stretch         = true
       layer2_unknown_unicast = "proxy"
