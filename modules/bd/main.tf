@@ -5,7 +5,7 @@ data "mso_tenant" "tenant" {
 
 data "mso_schema" "schema" {
   depends_on = [
-    data.mso_tenant.tenant,
+    data.mso_tenant.tenant
   ]
   name      = var.schema
   tenant_id = data.mso_tenant.tenant.id
