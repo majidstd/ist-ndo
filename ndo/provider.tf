@@ -13,7 +13,7 @@ terraform {
 #
 provider "mso" {
   # MSO URL for API Calls
-  url = "https://${var.mso_hostname}/mso/"
+  url = "https://${var.mso_hostname}"
   # Platform is either mso or nd
   # platform = "nd"
   # insecure is for self-signed certificates.  false if you have a public signed certificate installed for the webpage.
