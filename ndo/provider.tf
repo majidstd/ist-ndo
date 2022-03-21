@@ -24,4 +24,6 @@ provider "mso" {
   password = var.mso_password
   # MSO Login Domain.  Default is Local
   domain = var.mso_domain
+  # PLatform Nexus Dashboard
+  platform = "nd"
 }
