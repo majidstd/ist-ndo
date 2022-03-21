@@ -35,7 +35,7 @@ module "schema_common_bd" {
 module "schema_common_app" {
   source   = "../modules/app"
   tenant   = "common"
-  schema   = "Common"
+  schema   = "common"
   template = "common"
   app_list = [
     {
@@ -54,7 +54,7 @@ module "schema_common_epg" {
   ]
   source   = "../modules/epg"
   tenant   = "common"
-  schema   = "Common"
+  schema   = "common"
   template = "common"
   vrf_name = "default"
   epg_list = [
