@@ -39,10 +39,13 @@ module "schema_common_app" {
   template = "common"
   app_list = [
     {
-      app_profile = "example2"
+      app_profile = "ap01"
+    },  
+  {
+      app_profile = "ap02"
     },
     {
-      app_profile = "example3"
+      app_profile = "ap03"
     }
   ]
 }
@@ -60,23 +63,23 @@ module "schema_common_epg" {
   epg_list = [
     # Make sure the BD Exists in MSO or that you created it in the previous module.
     {
-      bridge_domain     = "example1"
-      app_profile       = "example1"
-      epg               = "example1"
+      bridge_domain     = "bd01"
+      app_profile       = "ap01"
+      epg               = "epg01"
       contract_consumer = "default"
       contract_provider = "default"
     },
     {
-      bridge_domain     = "example2"
-      app_profile       = "example1"
-      epg               = "example2"
+      bridge_domain     = "bd02"
+      app_profile       = "ap01"
+      epg               = "epg02"
       contract_consumer = "default"
       contract_provider = "default"
     },
     {
-      bridge_domain     = "example2"
-      app_profile       = "example2"
-      epg               = "example3"
+      bridge_domain     = "bd02"
+      app_profile       = "ap02"
+      epg               = "epg03"
       contract_consumer = "default"
       contract_provider = "default"
     }
