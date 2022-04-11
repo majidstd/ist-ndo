@@ -41,7 +41,7 @@ module "schema_common_app" {
     {
       app_profile = "ap01"
     },  
-  {
+    {
       app_profile = "ap02"
     },
     {
