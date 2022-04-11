@@ -18,6 +18,6 @@ resource "mso_schema_template_anp" "app_profile" {
   display_name = var.app_list[count.index].app_profile
   name         = var.app_list[count.index].app_profile
   schema_id    = data.mso_schema.schema.id
-  template     = var.template
+  template     = "common"
   count        = length(var.app_list)
 }
