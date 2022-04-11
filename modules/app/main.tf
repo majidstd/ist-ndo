@@ -13,7 +13,7 @@ data "mso_schema" "schema" {
 
 resource "mso_schema_template_anp" "app_profile" {
   depends_on = [
-    data.mso_schema.schema,
+    data.mso_schema.schema
   ]
   display_name = var.app_list[count.index].app_profile
   name         = var.app_list[count.index].app_profile
