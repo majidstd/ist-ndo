@@ -1,6 +1,3 @@
-output "app_profile" {
-  value = schema_common_app.app_list
-}
 
 module "schema_common_bd" {
   source   = "../modules/bd"
